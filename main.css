@@ -1,0 +1,60 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; 
+}
+
+.box{
+
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    position: relative;
+    top: 250px;
+    left: 0;
+    animation-name: render;
+    animation-duration: 6s;
+   animation-iteration-count: infinite;
+   animation-timing-function:linear ;
+   animation-fill-mode: both;
+
+
+}
+
+
+@keyframes render{
+    0%{
+        background-color: red;
+        top: 250px;
+        left: 0;
+    }
+
+    100%{
+        background-color: blue;
+        top: 250px;
+        left: 1600px;
+        transform: rotate(360deg);
+    }
+
+    
+}
+
+.body{
+    margin: 0;
+    padding: 0;
+    animation: bodyAnimate 7s linear infinite both;
+}
+ @keyframes bodyAnimate{
+    0%{
+        background-color: aqua;
+
+    }
+
+    50%{
+        background-color: yellow;
+    }
+
+    100%{
+        background-color: black;
+    }
+ }
